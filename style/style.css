@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lemonada:wght@300;400&family=Major+Mono+Display&family=Montserrat:wght@300&family=Permanent+Marker&family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Acme', sans-serif;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: #B81B44;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    opacity: 0.9;
+    height: 10vh;
+}
+
+.navbar .logo{
+    width: 70px;
+    height: 70px;
+    grid-column: 2/3;
+    transform: translateX(-7em);
+    opacity: 1;
+}
+
+.navbar .menu{
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+    opacity: 1;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar .menu a{
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 1.2s;
+    margin-right: 10em;
+    font-size: 1.2em;
+}
+
+.navbar .menu a:hover{
+    color: whitesmoke;
+}
+
+.navbar .menu-bar{
+    display: none; 
+}
+
+.navbar .other{
+    grid-column: 8/9; 
+    font-size: 1.5em;
+}
+
+/* * * * * * * * * * * *  MAIN SECTION  * * * * * * * * * *  */
+.hero{
+    height: 83vh;
+    background-image: linear-gradient(rgba(39, 25, 35, 0.8), rgba(16,16,16, .9)),url(../img/Fondo.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(10 ,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info-content{
+    grid-column: 7/10;
+    grid-row: 2/7;
+    color: whitesmoke;
+    margin-top: 3em;
+}
+
+.hero h3{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.hero h1{
+    font-size: 6em;
+    color: #B81B44;
+    font-family: 'Permanent Marker', cursive;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-family: 'Lemonada', cursive;
+    font-weight: 300;
+    word-spacing: 5px;
+    margin-top: 15xpx;
+}
+
+.hero .btn{
+    font-size: 1em;
+    background: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: 3px solid #B81B44;
+    border-radius: 30px;
+    margin-top: 35px;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.hero .btn:hover{
+    background: #B81B44;
+    color: black;
+    font-weight: 600;
+}
+
+/* * * * * * * * FOOTER SECTION  * * * * *  */
+footer{
+    display: grid;
+    height: 7.3vh;
+    align-items: center;
+    background-color: #181818;
+    color: whitesmoke;
+    grid-template-areas: "listen-online follow-me social-network";
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .listen-online{
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B81B44;
+    padding: 26px;
+    color: #181818;
+    opacity: 0.6;
+    
+}
+
+footer .listen-online i{
+    font-size: 1.5em;
+    margin-right: 25px;
+}
+
+footer .listen-online i, footer .listen-online h2{
+    transform: translate(0px, -2vh);
+}
+
+footer .follow-me{
+    grid-template-areas: follow-me;
+    text-align: center;
+    padding: 2px;
+    word-spacing: 10px;
+}
+
+footer .follow-me h2{
+    transform: translate(100px, -2vh);
+}
+
+footer .social-network{
+    grid-template-areas: social-network;
+    font-size: 1.5em;
+    
+}
+
+footer .social-network i{
+    transform: translate(250px, -2vh);
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 6em;  
+    transition: all 1.2s;
+}
+
+footer .social-network i:hover{
+    color: #B81B44;
+}
